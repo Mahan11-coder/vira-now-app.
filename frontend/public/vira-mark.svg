@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+ <defs>
+  <linearGradient id="bg" x1="10" y1="8" x2="118" y2="124" gradientUnits="userSpaceOnUse"><stop stop-color="#132E53"/><stop offset="1" stop-color="#070D1D"/></linearGradient>
+  <linearGradient id="crystal" x1="30" y1="20" x2="102" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#F0FDFF"/><stop offset=".22" stop-color="#8BE6FF"/><stop offset=".55" stop-color="#378FFF"/><stop offset="1" stop-color="#8268FF"/></linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+ <rect width="128" height="128" rx="34" fill="url(#bg)"/>
+ <rect x="1" y="1" width="126" height="126" rx="33" stroke="#9ADFFF" stroke-opacity=".24" stroke-width="2"/>
+ <circle cx="64" cy="61" r="48" fill="#258DFF" opacity=".11"/>
+ <path d="M23 29h23l18 49 18-49h23L75 104c-5 11-17 11-22 0L23 29Z" fill="url(#crystal)" filter="url(#glow)"/>
+ <path d="M33 27h12l19 51 8-19" stroke="#F1FDFF" stroke-width="3.5" stroke-linecap="round" fill="none" opacity=".88"/>
+ <path d="m64 79 18-49h10L68 96" fill="#DDF9FF" opacity=".17"/>
+</svg>

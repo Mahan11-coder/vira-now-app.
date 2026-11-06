@@ -1,0 +1,19 @@
+[Unit]
+Description=VIRA Helper Telegram Bot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=novacom
+WorkingDirectory=/home/novacom/vira_api/helper
+EnvironmentFile=/home/novacom/vira_api/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/novacom/virtualenv/vira_api/3.11/bin/python /home/novacom/vira_api/helper/vira_helper_bot.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
